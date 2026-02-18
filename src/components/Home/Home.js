@@ -55,14 +55,14 @@ function Home() {
             </p>
               <ul className="home-about-social-links">
               <li className="social-icons">
-   <a
-  href="https://github.com/Jagadeesh0509"
-  target="_blank"
-  rel="noreferrer"
-  className="icon-colour home-social-icons"
->
-  <AiFillGithub />
-</a>
+                  <a
+                  href="https://github.com/Jagadeesh0509"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
 
               </li>
               <li className="social-icons">

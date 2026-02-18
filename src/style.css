@@ -166,7 +166,7 @@ button:focus {
 
 /* Brand text (cursive) */
 .brand {
-  font-family: 'Great Vibes', cursive;
+  font-family: san`s-serif !important;
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--imp-text-color);
