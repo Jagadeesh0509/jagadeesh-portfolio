@@ -6,7 +6,9 @@ import Particle from "../Particle";
 
 import jobby from "../../Assets/Projects/jobby.png";
 import nxtrendz from "../../Assets/Projects/nxtrendz.png";
-import nxtwatch from "../../Assets/Projects/nxtwatch.jpg";
+import nxtwatch from "../../Assets/Projects/nxtwatch.png";
+
+import smartBookmarkApp from "../../Assets/Projects/smartBookmarkApp.png";
 
 
 function Projects() {
@@ -22,7 +24,11 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-    <Col md={4} className="project-card">
+
+{/* jobby */}
+
+
+  <Col md={4} className="project-card">
   <ProjectCard 
     imgPath={jobby}
     isBlog={false}
@@ -51,7 +57,9 @@ function Projects() {
 </Col>
 
 
-          {/* Removed blog project as requested */}
+{/* nxtrendz */}
+
+
 <Col md={4} className="project-card">
   <ProjectCard
    imgPath={nxtrendz}
@@ -81,6 +89,10 @@ function Projects() {
 </Col>
 
 
+
+
+{/* nxtwatch */}
+
 <Col md={4} className="project-card">
   <ProjectCard
    imgPath={nxtwatch}
@@ -106,6 +118,38 @@ function Projects() {
     demoLink="https://nxtwatch.ccbp.tech/login"
   />
   </Col>
+
+
+  {/* smart BookMark App */}
+
+<Col md={4} className="project-card">
+  <ProjectCard
+   imgPath={smartBookmarkApp}
+    isBlog={false}
+    title={
+  <span className="purple auto-underline mb-3" style={{ fontWeight:"700" , fontSize: "1.6rem" }}>
+   Smart Bookmark App
+  </span>
+}
+
+
+    
+    description={
+      <>
+        <ul>
+            <li>Built a Smart Bookmark app using Next.js App Router and Supabase.</li>
+            <li>Implemented secure Google OAuth authentication with user session management.</li>
+            <li>Ensured user-specific data privacy by filtering bookmarks using user_id and enabling Row Level Security.</li>
+            <li>Developed real-time bookmark updates using Supabase postgres_changes subscriptions.</li>
+            <li>Added URL validation, loading states, and responsive UI using Tailwind CSS.</li>
+            <li>Deployed the application on Vercel with secure environment variable configuration.</li>
+
+        </ul>
+      </>
+    }
+    demoLink="https://smart-bookmark-app-lac-psi.vercel.app/"
+  />
+</Col>
         </Row>
         </Container>
       </Container>
