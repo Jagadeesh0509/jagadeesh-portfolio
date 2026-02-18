@@ -47,7 +47,7 @@ useEffect(() => {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span className="brand">JP.</span>
+          <span className="brand">{"<JAGADEESH/>"}<span className="wave" role="img" aria-labelledby="wave">🧑‍💻</span></span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
