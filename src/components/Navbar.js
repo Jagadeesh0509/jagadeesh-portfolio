@@ -3,6 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+//import Particle from "./components/Particle";
+
 
 import {
   AiOutlineHome,
@@ -27,7 +30,13 @@ function NavBar() {
     }
   }
 
+
+
+useEffect(() => {
   window.addEventListener("scroll", scrollHandler);
+  return () => window.removeEventListener("scroll", scrollHandler);
+}, []);
+
 
   return (
     <Navbar

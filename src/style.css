@@ -146,15 +146,36 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+ 
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
+
+  /* 🔥 ADD THIS PART BELOW */
+
+  .navbar-collapse {
+    text-align: right !important;
+    background: transparent !important;
+    backdrop-filter: blur(8px);
+  }
+
+  .navbar-nav {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0 !important;
+    margin-bottom: 12px;
+  }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -166,7 +187,7 @@ button:focus {
 
 /* Brand text (cursive) */
 .brand {
-  font-family: san`s-serif !important;
+
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--imp-text-color);
