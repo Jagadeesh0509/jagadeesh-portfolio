@@ -3,9 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-//import Particle from "./components/Particle";
-
 
 import {
   AiOutlineHome,
@@ -30,13 +27,7 @@ function NavBar() {
     }
   }
 
-
-
-useEffect(() => {
   window.addEventListener("scroll", scrollHandler);
-  return () => window.removeEventListener("scroll", scrollHandler);
-}, []);
-
 
   return (
     <Navbar
@@ -47,7 +38,10 @@ useEffect(() => {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span className="brand">{"<JAGADEESH/>"}<span className="wave" role="img" aria-labelledby="wave">🧑‍💻</span></span>
+          <span className="brand">{"<JP./>"}
+            <span className="wave" role="img" aria-labelledby="wave">🧑‍💻</span>
+            </span>
+  
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -100,7 +94,8 @@ useEffect(() => {
 
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+
+                        <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/education"
