@@ -8,6 +8,8 @@ import jobby from "../../Assets/Projects/jobby.png";
 import nxtrendz from "../../Assets/Projects/nxtrendz.png";
 import nxtwatch from "../../Assets/Projects/nxtwatch.png";
 
+import chatapp from "../../Assets/Projects/chatapp.png";
+
 import smartBookmarkApp from "../../Assets/Projects/smartBookmarkApp.png";
 
 
@@ -24,6 +26,35 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+
+
+
+<Col md={4} className="project-card">
+  <ProjectCard 
+    imgPath={chatapp}
+    isBlog={false}
+    title={
+      <span className="purple auto-underline mb-3" style={{ fontWeight:"700", fontSize: "1.6rem" }}>
+        Real-Time Chat Application
+      </span>
+    }
+
+    description={
+      <>
+        <ul>
+          <li>Developed a full-stack real-time chat app with public/private messaging, typing indicators, and read receipts.</li>
+          <li>Implemented JWT authentication with protected REST APIs and secure Socket.io validation.</li>
+          <li>Built live messaging features including message editing, deletion, notifications, and user status tracking.</li>
+          <li>Designed an optimized SQLite database with pagination, soft deletes, and efficient indexed queries.</li>
+          <li>Built a responsive frontend using React Context API for efficient state management.</li>
+        </ul>
+      </>
+    }
+
+    demoLink="https://chatapp-alpha-peach.vercel.app/login"
+  />
+</Col>
 
 {/* jobby */}
 
